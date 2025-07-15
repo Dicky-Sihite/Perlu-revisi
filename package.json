@@ -1,0 +1,37 @@
+{
+  "name": "openmusic-api-v3",
+  "version": "1.0.0",
+  "description": "OpenMusic API version 3 with export, upload, and cache features",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down",
+    "migrate:create": "node-pg-migrate create",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0",
+    "@hapi/inert": "^7.0.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.3",
+    "auto-bind": "^4.0.0",
+    "aws-sdk": "^2.1292.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.6.1",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "mime-types": "^2.1.35",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^3.3.4",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.8.0",
+    "redis": "^4.5.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "node-pg-migrate": "^6.2.2",
+    "nodemon": "^3.1.10"
+  }
+}
